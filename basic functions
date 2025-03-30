@@ -12,4 +12,12 @@ def validNuc(seq):
 
 test_seq = ''.join([random.choice(Nucleotides) for nuc in range (50)])
 
-print(validNuc(test_seq))
+# To count each nucleotide in a sequence, there are two ways:
+# first:
+def countNuc(seq):
+    tmpdict = {'A': 0, 'T': 0, 'G':0, 'C': 0}
+    for nuc in seq:
+        tmpdict[nuc] += 1
+    return tmpdict
+
+# second:
