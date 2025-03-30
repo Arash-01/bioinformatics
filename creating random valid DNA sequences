@@ -1,0 +1,15 @@
+import Bio
+import random
+
+Nucleotides = ('A', 'T', 'G', 'C')
+
+def validNuc(seq):
+    tmpseq = seq.upper()
+    for nuc in tmpseq:
+        if nuc not in Nucleotides:
+            print('Not a valid sequence.')
+    return tmpseq
+
+test_seq = ''.join([random.choice(Nucleotides) for nuc in range (50)])
+
+print(validNuc(test_seq))
