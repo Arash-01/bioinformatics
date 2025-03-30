@@ -1,4 +1,4 @@
- import Bio
+import Bio
 import random
 
 Nucleotides = ('A', 'T', 'G', 'C')
